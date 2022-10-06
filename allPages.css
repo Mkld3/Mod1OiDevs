@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+margin: 0% 2% 0%;
+}
+
+nav{
+    background-color: black;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+}
+
