@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXXXX - Reserva</title>
+    <link rel="stylesheet" href="./reserva.css">
+    <!-- <script src="./teste.js"></script> -->
+
+</head>    
+<body>
+    <main class="container">
+        <form action="https://www.w3schools.com/action_page.php" method="post" class="forms">
+        <div class="inside_forms">
+
+            <h3>Reserva:</h3>
+            <label for="name">Coloque seu nome aqui:</label>
+            <input type="text" name ='name'> <br><br>
+            <label for="date">Escolha a data da reserva:</label>
+            <input type="date" name='date'> <br><br>
+            <label for="time">Escolha o horário da reserva:</label>
+            <input type="time"> <br><br>
+            
+            <input type="radio" name="local" checked>
+            <label for="local">Lado de fora</label> <br><br>
+            <input type="radio" name="local">
+            <label for="local">Lado de dentro</label> <br><br>
+            <label for="quantidade_pessoas">Numero de pessoas:</label>
+            <select name="quantidade_pessoas" class='selecionador' id="pessoas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select> <br><br>
+
+            <div class="buttons">
+                <button class='button' type="submit">Criar reserva</button>
+            </div> 
+        </div>      
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@import url('http://fonts.cdnfonts.com/css/zrnic');
+
+body {
+    background: linear-gradient(rgba(41, 40, 40, 0.384),rgba(197, 191, 191, 0.404)), url('./assets/bannerRestaurante.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    /* padding-top: 20px; */
+    padding-top: 5%;
+    font-family: 'Zrnic', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 52px 250px calc(100% - 352px) 50px; */
+    height: 400px;
+}
+
+.forms{
+    border-radius: 20px;
+    background-color: white;
+    grid-column: 2/4;
+    grid-row: 1/5;
+    border: 2px solid #000;
+}
+
+input:invalid + span::after {
+    position: absolute;
+    /* content: "✖"; */
+    padding-left: 5px;
+  }
+
+input:valid + span::after {
+    position: absolute;
+    content: "✓";
+    padding-left: 5px;
+  }
+
+.inside_forms{
+    position: relative;
+    left: 10%;
+}
+
+.selecionador{
+    width: 50px;
+}
+
+.buttons {
+    /* grid-column: 2/4;
+    grid-row: 4/5; */
+    width: 45%;
+    /* background-color: aqua; */
+    /* gap: 100px; */
+  }
+  
+.button {
+    
+    font-family: 'Zrnic', sans-serif;
+    width: 45%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px #222, -4px 6px #000;
+
+}
+
+.button:active {
+box-shadow: inset -4px 4px 0 #222;
+font-size:  0.9rem;
+}
