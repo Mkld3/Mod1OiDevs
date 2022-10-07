@@ -4,19 +4,28 @@ body{
 }
 
 main{
-margin: 0% 2% 0%;
+margin: 0% 5% 5%;
 }
 
+
 nav{
-    background-color: black;
-    height: 55px;
+    background-color: rgb(80, 52, 52);
+    height: 65px;
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 45px;
 }
 
 nav a {
     color: white;
 }
+.menu{
+    font-size: large;
+    text-decoration: none;
+}
 
+footer{
+    background-color: antiquewhite;
+    height: 55px;
+}
