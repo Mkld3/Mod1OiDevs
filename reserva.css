@@ -41,7 +41,11 @@ body {
     width: 60%;
     padding: 30px 35px;
     box-shadow: 0px 10px 40px #00000056;
+    
+}
 
+input {
+    box-sizing: border-box;
 }
 
 h3  {
@@ -74,10 +78,26 @@ h3  {
     color:  #742821;
     background-color: #f2bc94;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #c99d7b;
+    box-shadow: 0px 0px 40px 0px #c99d7b;
+    border: 1px solid #30110d;
 
 }
 
+.button:hover {
+    background-color: #f2bd94ce;
+}
+
+.modal-title.fs-5{
+    color: #742821;
+}
+
+.btn.btn-secondary{
+    background-color: #742821;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #30110d;
+}
 
 .telefone {
     position: inherit;
