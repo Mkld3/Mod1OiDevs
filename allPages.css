@@ -1,6 +1,9 @@
+@import url('http://fonts.cdnfonts.com/css/zrnic');
+
 body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Zrnic', sans-serif;
 }
 
 main{
@@ -9,7 +12,7 @@ margin: 0% 5% 5%;
 
 
 nav{
-    background-color: rgb(80, 52, 52);
+    background-color:#742821;
     height: 65px;
     width: 100%;
     display: flex;

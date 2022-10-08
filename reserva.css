@@ -78,7 +78,6 @@ h3  {
     color:  #742821;
     background-color: #f2bc94;
     cursor: pointer;
-    box-shadow: 0px 0px 40px 0px #c99d7b;
     border: 1px solid #30110d;
 
 }
@@ -97,6 +96,10 @@ h3  {
 
 .btn.btn-secondary:hover {
     background-color: #30110d;
+}
+
+.btn.btn.btn-secondary a{
+    color: white;
 }
 
 .telefone {

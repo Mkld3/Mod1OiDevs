@@ -1,28 +1,35 @@
 @import url('http://fonts.cdnfonts.com/css/zrnic');
 
 body {
-    background: linear-gradient(rgba(41, 40, 40, 0.384),rgba(197, 191, 191, 0.404)), url('./assets/bannerRestaurante.png');
+    background: linear-gradient(#f2bd94c0,#f0ad7a), url('./assets/bannerIndex.png'); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0;
 }
 
 .container{
-    /* padding-top: 20px; */
-    padding-top: 5%;
     font-family: 'Zrnic', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 52px 250px calc(100% - 352px) 50px; */
-    height: 350px;
+    text-align: center;
 }
 
 .forms{
-    border-radius: 20px;
-    background-color: white;
-    width: 80%;
-    grid-column: 2/4;
-    border: 2px solid #000;
+    border-radius: 500px;
+    position: absolute;
+    left: 28%;
+    top: 5%;
+    background-color:rgba(245, 245, 245, 0.733);
+    border: 1px solid #742821;
+    color: #742821;
+    width: 500px;
+    height: 500px;
+    align-content: center;
+    font-size:larger;
+}
+
+.inside_forms {
+    position: relative;
+    top: 17%;
 }
 
 input:invalid + span::after {
@@ -37,52 +44,30 @@ input:valid + span::after {
     padding-left: 5px;
   }
 
-.inside_forms{
-    position: relative;
-    left: 10%;
-    
-}
-
-/* label {
-    width: 100px;
-} */
-
-.input_password{
-    width: 163px;
-}
-
-.selecionador{
-    width: 50px;
-}
-
 p {
-    color: gray;
+    color: rgb(92, 91, 91);
 }
 
 .buttons {
-    /* grid-column: 2/4;
-    grid-row: 4/5; */
-    width: 45%;
-    /* background-color: aqua; */
-    /* gap: 100px; */
+    text-transform: uppercase;
   }
   
 .button {
-    
+    position: relative;
+    align-items: center;
     font-family: 'Zrnic', sans-serif;
-    width: 45%;
-    padding: 4%;
-    border: 2px solid #000;
+    width: 50%;
+    border: 1px solid #000;
     border-radius: 5px;
     font-size: clamp(8px, 5vw, 1rem);
     font-weight: 600;
-    color: white;
-    background-color: #444;
-    box-shadow: -2px 3px #222, -4px 6px #000;
+    color: #742821;
+    background-color: #f2bc94;
+    box-shadow: -2px 2px #222, -2px 4px #000;
 
 }
 
 .button:active {
-box-shadow: inset -4px 4px 0 #222;
+box-shadow: inset -2px 2px 0 #222;
 font-size:  0.9rem;
 }
