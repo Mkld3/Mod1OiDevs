@@ -1,90 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lótus Hotel - Reserva</title>
-    <link rel="stylesheet" href="./allPages.css">
-    <link rel="stylesheet" href="./reserva.css">
-</head>
+    <link rel="stylesheet" href="./allPages.css" />
+    <link rel="stylesheet" href="./reserva.css" />
+    <link
+      class="favicon"
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon.svg"
+    />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <a class="menu" style="padding-left: 50px;" href="./index.html"> Lótus Hotel</a>
-        <a class="menu" href="./reserva.html">Reservas</a>
-        <a class="menu" href="./faleConosco.html"> Fale Conosco</a>
-        <a style="padding-left: 62%; text-decoration: none; font-size: large" href="./login.html"> Login </a>
+      <a class="menu" style="padding-left: 50px" href="./index.html">
+        Lótus Hotel</a
+      >
+      <a class="menu" href="./reserva.html">Reservas</a>
+      <a class="menu" href="./faleConosco.html"> Fale Conosco</a>
+      <a
+        style="padding-left: 62%; text-decoration: none; font-size: large"
+        href="./login.html"
+      >
+        Login
+      </a>
     </nav>
-    <div> </div>
+    <div></div>
     <!-- <figure>
         <img src="./assets/Telemarketing.jpg" alt="Imagem de mulher com headset e usando notebook.">
     </figure> -->
     <main>
-        
-        <form>
-            <fieldset>
-                <h1>Reserve seu Quarto</h1>
-                 <section class="dados_pessoais">  <!---->
-                    <label for="nome">Nome completo</label>
-                    <input id="nome" type="text" required placeholder="João José dos Santos Silva">
-                    
-                    <label for="phone">Celular</label>
-                    <input id="phone" type="phone" required placeholder="(11) 99999-9999">
-                    
-                    <label for="email">E-mail</label>
-                    <input id="email" type="email" required placeholder="joaosilva@hotellotus.com.br">
-                    <label for="email">Confirme seu e-mail</label>
-                    <input id="email" type="email" required placeholder="joaosilva@hotellotus.com.br">
-                </section>
-                <section class="data_horario">
-                    <div id="reserva_inicio">
-                        <label for="date">Data do início da reserva:</label>
-                        <input type="date" name='date'>
-                        <label for="time">Hora do início da reserva:</label>
-                        <input type="time">
-                    </div>
-                    <div id="reserva_fim">
-                        <label for="date">Data do final da reserva:</label>
-                        <input type="date" name='date'>
-                        <label for="time">Hora do final da reserva:</label>
-                        <input type="time">
-                    </div>
-                </section>
-                <section class="info_quarto">
-                    <label for="tipo">Tipo de Quarto</label>
-                    <select name="tipo-comentario" required>
-                        <option placeholder=""></option>
-                        <option value="duvida">Simples</option>
-                        <option value="elogio">Luxo</option>
-                        <option value="reclamacao">Premium</option>
-                    </select>
-                    <label for="quantidade_pessoas">O quarto será para quantas pessoas:</label>
-                    <select name="quantidade_pessoas" class='selecionador' id="pessoas">
-                        <option placeholder=""></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                    <label for="mensagem">Informe como deseja a distribuição das camas</label>
-                    <textarea name="mensagem" id="mensagem" cols="2" rows="2" placeholder="Digite aqui sua mensagem"></textarea>
-                </section>
-                <section>
-                    <button type="submit" class="button-container">Reservar</button>
-                    <button type="reset" class="button-container">Limpar</button>
-                </section>
-                <section>
-                    <p>Ou ligue para agendar a sua reserva:</p>
-                    <p><img src="./assets/telephone-inbound.svg"> (11) 3333-8080</p>
-                </section>
-            </fieldset>
-        </form>
+      <form>
+        <fieldset>
+          <h1>Reserve seu Quarto</h1>
+          <section class="dados_pessoais">
+            <!---->
+            <label for="nome">Nome completo</label>
+            <input
+              id="nome"
+              type="text"
+              required
+              placeholder="João José dos Santos Silva"
+            />
+
+            <label for="phone">Celular</label>
+            <input
+              id="phone"
+              type="phone"
+              required
+              placeholder="(11) 99999-9999"
+            />
+
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="joaosilva@hotellotus.com.br"
+            />
+            <label for="email">Confirme seu e-mail</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="joaosilva@hotellotus.com.br"
+            />
+          </section>
+          <section class="data_horario">
+            <div id="reserva_inicio">
+              <label for="date">Data do início da reserva:</label>
+              <input type="date" name="date" />
+              <label for="time">Hora do início da reserva:</label>
+              <input type="time" />
+            </div>
+            <div id="reserva_fim">
+              <label for="date">Data do final da reserva:</label>
+              <input type="date" name="date" />
+              <label for="time">Hora do final da reserva:</label>
+              <input type="time" />
+            </div>
+          </section>
+          <section class="info_quarto">
+            <label for="tipo">Tipo de Quarto</label>
+            <select name="tipo-comentario" required>
+              <option placeholder=""></option>
+              <option value="duvida">Simples</option>
+              <option value="elogio">Luxo</option>
+              <option value="reclamacao">Premium</option>
+            </select>
+            <label for="quantidade_pessoas"
+              >O quarto será para quantas pessoas:</label
+            >
+            <select name="quantidade_pessoas" class="selecionador" id="pessoas">
+              <option placeholder=""></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <label for="mensagem"
+              >Informe como deseja a distribuição das camas</label
+            >
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="2"
+              rows="2"
+              placeholder="Digite aqui sua mensagem"
+            ></textarea>
+          </section>
+          <section>
+            <button type="submit" class="button-container">Reservar</button>
+            <button type="reset" class="button-container">Limpar</button>
+          </section>
+          <section>
+            <p>Ou ligue para agendar a sua reserva:</p>
+            <p><img src="./assets/telephone-inbound.svg" /> (11) 3333-8080</p>
+          </section>
+        </fieldset>
+      </form>
     </main>
-    
+
     <footer>
-        <h5> Incluir ícones</h5>
+      <ul class="social">
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="./assets/instagram.svg" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="./assets/facebook.svg" alt="Facebook"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://wa.me/551199999999?text=Tenho%20interesse%20em%20fazer%20uma%20reserva"
+            target="_blank"
+            ><img src="./assets/whatsapp.svg" alt="Whastapp"
+          /></a>
+        </li>
+      </ul>
+      <p>2022 - OiDevs team</p>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,62 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lótus Hotel - Fale Conosco</title>
-    <link rel="stylesheet" href="./allPages.css">
-    <link rel="stylesheet" href="./FaleConosco.css">
-</head>
+    <link rel="stylesheet" href="./allPages.css" />
+    <link rel="stylesheet" href="./FaleConosco.css" />
+    <link
+      class="favicon"
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon.svg"
+    />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <a class="menu" style="padding-left: 50px;" href="./index.html"> Lótus Hotel</a>
-        <a class="menu" href="./reserva.html">Reservas</a>
-        <a class="menu" href="./faleConosco.html"> Fale Conosco</a>
-        <a style="padding-left: 62%; text-decoration: none; font-size: large" href="./login.html"> Login </a>
+      <a class="menu" style="padding-left: 50px" href="./index.html">
+        Lótus Hotel</a
+      >
+      <a class="menu" href="./reserva.html">Reservas</a>
+      <a class="menu" href="./faleConosco.html"> Fale Conosco</a>
+      <a
+        style="padding-left: 62%; text-decoration: none; font-size: large"
+        href="./login.html"
+      >
+        Login
+      </a>
     </nav>
-    <div> </div>
+    <div></div>
     <!-- <figure>
         <img src="./assets/Telemarketing.jpg" alt="Imagem de mulher com headset e usando notebook.">
     </figure> -->
     <main>
-        
-        <form>
-            <fieldset>
-                <h1>Fale Conosco</h1>
-                 <section>  <!--dados pessoais-->
-                    <label for="nome">Nome completo</label>
-                    <input id="nome" type="text" required placeholder="João José dos Santos Silva">
-                    
-                    <label for="email">E-mail</label>
-                    <input id="email" type="email" required placeholder="joaosilva@hotellotus.com.br">
-                </section>
-                <section>
-                    <label for="tipo">Tipo de Comentário</label>
-                    <select name="tipo-comentario" required>
-                        <option placeholder=""></option>
-                        <option value="duvida">Dúvida</option>
-                        <option value="elogio">Agradecimento/Elogio</option>
-                        <option value="reclamacao">Reclamação</option>
-                        <option value="outro">Outro</option>
-                    </select>
-                    <label for="mensagem">Nos deixe uma mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="5" rows="5" required placeholder="Digite aqui sua mensagem"></textarea>
-                </section>
-                <section>
-                    <button type="submit" class="button-container">Enviar</button>
-                    <button type="reset" class="button-container">Limpar</button>
-                </section>
+      <form>
+        <fieldset>
+          <h1>Fale Conosco</h1>
+          <section>
+            <!--dados pessoais-->
+            <label for="nome">Nome completo</label>
+            <input
+              id="nome"
+              type="text"
+              required
+              placeholder="João José dos Santos Silva"
+            />
 
-            </fieldset>
-        </form>
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="joaosilva@hotellotus.com.br"
+            />
+          </section>
+          <section>
+            <label for="tipo">Tipo de Comentário</label>
+            <select name="tipo-comentario" required>
+              <option placeholder=""></option>
+              <option value="duvida">Dúvida</option>
+              <option value="elogio">Agradecimento/Elogio</option>
+              <option value="reclamacao">Reclamação</option>
+              <option value="outro">Outro</option>
+            </select>
+            <label for="mensagem">Nos deixe uma mensagem</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="5"
+              rows="5"
+              required
+              placeholder="Digite aqui sua mensagem"
+            ></textarea>
+          </section>
+          <section>
+            <button type="submit" class="button-container">Enviar</button>
+            <button type="reset" class="button-container">Limpar</button>
+          </section>
+        </fieldset>
+      </form>
     </main>
-    
-    <footer>
-        <h5> Incluir ícones</h5>
-    </footer>
-</body>
 
+    <footer>
+      <ul class="social">
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="./assets/instagram.svg" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="./assets/facebook.svg" alt="Facebook"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://wa.me/551199999999?text=Tenho%20interesse%20em%20fazer%20uma%20reserva"
+            target="_blank"
+            ><img src="./assets/whatsapp.svg" alt="Whastapp"
+          /></a>
+        </li>
+      </ul>
+      <p>2022 - OiDevs team</p>
+    </footer>
+  </body>
 </html>

@@ -1,45 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Lótus - Login</title>
-    <link rel="stylesheet" href="./allPages.css">
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./allPages.css" />
+    <link rel="stylesheet" href="./login.css" />
     <script src="./index.js"></script>
-
-</head>    
-<body>
+    <link
+      class="favicon"
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon.svg"
+    />
+  </head>
+  <body>
     <nav>
-        <a class="menu" style="padding-left: 50px;" href="./index.html">Lótus Hotel</a>
-        <a class="menu" href="./reserva.html">Reservas</a>
-        <a class="menu" href="./faleConosco.html">Fale Conosco</a>
-        <a style="padding-left: 62%; text-decoration: none; font-size: large" href="./login.html"> Login </a>
+      <a class="menu" style="padding-left: 50px" href="./index.html"
+        >Lótus Hotel</a
+      >
+      <a class="menu" href="./reserva.html">Reservas</a>
+      <a class="menu" href="./faleConosco.html">Fale Conosco</a>
+      <a
+        style="padding-left: 62%; text-decoration: none; font-size: large"
+        href="./login.html"
+      >
+        Login
+      </a>
     </nav>
     <main class="container">
-        <form class="forms" method="get" id="formulario">
-            <!-- action="./index.html" method="post" -->
+      <form class="forms" method="get" id="formulario">
+        <!-- action="./index.html" method="post" -->
         <div class="inside_forms">
-            <h1>Login</h1>
-            
-            <label for="email">Email:</label>
-            <input type="email" name='email' placeholder="joaosilva@hotellotus.com.br" id="input_email" required >
-            <span class="validity"></span> <br><br>
-            <label for="senha">Senha:</label>
-            <input class='input_password' type="password" name="senha" placeholder="Senha" required
-            minlength="4" maxlength="8" size="10">
-            <span class="validity"></span> <br>
-            <p>Lembre-se: sua senha tem entre 4 e 8 caracteres.</p> <br>
+          <h1>Login</h1>
 
-            <div class="buttons">
-                <button class='button' type="submit">Entrar</button>
-            </div> 
-        </div>      
-        </form>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="joaosilva@hotellotus.com.br"
+            id="input_email"
+            required
+          />
+          <span class="validity"></span> <br /><br />
+          <label for="senha">Senha:</label>
+          <input
+            class="input_password"
+            type="password"
+            name="senha"
+            placeholder="Senha"
+            required
+            minlength="4"
+            maxlength="8"
+            size="10"
+          />
+          <span class="validity"></span> <br />
+          <p>Lembre-se: sua senha tem entre 4 e 8 caracteres.</p>
+          <br />
+
+          <div class="buttons">
+            <button class="button" type="submit">Entrar</button>
+          </div>
+        </div>
+      </form>
     </main>
     <footer>
-        <h5> Incluir ícones</h5>
+      <ul class="social">
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="./assets/instagram.svg" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="./assets/facebook.svg" alt="Facebook"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://wa.me/551199999999?text=Tenho%20interesse%20em%20fazer%20uma%20reserva"
+            target="_blank"
+            ><img src="./assets/whatsapp.svg" alt="Whastapp"
+          /></a>
+        </li>
+      </ul>
+      <p>2022 - OiDevs team</p>
     </footer>
-</body>
+  </body>
 </html>
