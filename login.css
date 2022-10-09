@@ -1,5 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/zrnic');
-
 body {
     background: linear-gradient(#f2bd94c0,#f0ad7a), url('./assets/bannerIndex.png'); 
     background-repeat: no-repeat;
@@ -9,27 +7,29 @@ body {
 }
 
 .container{
-    font-family: 'Zrnic', sans-serif;
     text-align: center;
 }
 
 .forms{
-    border-radius: 500px;
-    position: absolute;
+    border-radius: 5%;
+    margin-top: 50px;
+    position: sticky;
     left: 28%;
     top: 5%;
     background-color:rgba(245, 245, 245, 0.733);
     border: 1px solid #742821;
     color: #742821;
     width: 500px;
-    height: 500px;
+    height: 350px;
     align-content: center;
     font-size:larger;
+    box-shadow: 0px 10px 40px #00000056;
 }
 
 .inside_forms {
     position: relative;
-    top: 17%;
+    top: 5%;
+    bottom: 5%;
 }
 
 input:invalid + span::after {
@@ -46,28 +46,31 @@ input:valid + span::after {
 
 p {
     color: rgb(92, 91, 91);
+    font-size: 12px;
 }
 
 .buttons {
     text-transform: uppercase;
-  }
+}
   
 .button {
     position: relative;
     align-items: center;
-    font-family: 'Zrnic', sans-serif;
-    width: 50%;
+    width: 30%;
     border: 1px solid #000;
     border-radius: 5px;
     font-size: clamp(8px, 5vw, 1rem);
-    font-weight: 600;
+    background-color: #f6f6e9;
     color: #742821;
-    background-color: #f2bc94;
-    box-shadow: -2px 2px #222, -2px 4px #000;
+    height: 40px;
+}
 
+button:hover {
+    cursor: pointer;
+    background-color: #f2bd94ce;
+    font-weight: bold;
 }
 
 .button:active {
-box-shadow: inset -2px 2px 0 #222;
-font-size:  0.9rem;
+    font-size:  1.1rem;
 }

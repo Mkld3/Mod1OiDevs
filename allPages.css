@@ -1,9 +1,7 @@
-@import url('http://fonts.cdnfonts.com/css/zrnic');
-
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Zrnic', sans-serif;
+    font-family: 'Times New Roman', Times, serif
 }
 
 main{
