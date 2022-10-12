@@ -1,24 +1,9 @@
-
-div:first-child{
-    height: 20px;
-}
-
-/* figure {
-    float: right;
-    min-width: 400px;
-    max-width: 470px;
-}
-
-img {
-    width: 100%;
-} */
-
 main {
     display: flex;
     max-width: 700px;
     min-width: 400px;
     min-height: 100vh;
-    margin: 0 auto;
+    margin: 40px auto;
     overflow: auto;
 }
 
@@ -103,6 +88,7 @@ div>label:not([for="date"]){
 
 .data_horario [type="date"], .data_horario [type="time"]{
     width: 50%;
+    text-align: center;
 }
 
 section:nth-child(5) {
@@ -137,11 +123,31 @@ section:nth-child(6) {
 
 p {
     align-self: initial;
-    margin: 0 0 0 60px;
+    margin: 0 0 0 10px;
     padding: 0;
 }
 
 p>img{
     margin: 0 5px 0 0;
     padding: 0;
+}
+
+footer {
+    margin: 0;
+}
+
+@media (max-width: 540px){
+    .data_horario{
+        flex-direction: column;
+        height: auto;
+    }
+    .data_horario [type="date"], .data_horario [type="time"]{
+        max-width: 80%;
+    }
+    #reserva_inicio{
+        width: 100%;
+    }
+    #reserva_fim{
+        width: 100%;
+    }
 }

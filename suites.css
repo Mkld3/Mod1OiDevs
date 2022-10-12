@@ -1,0 +1,51 @@
+main {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    min-height: 100vh;
+    gap: 40px;
+    align-items: center;
+    text-align: justify;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+article {
+    align-self: center;
+    width: 40%;
+    padding: 1%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+img {
+    max-width: 50%;
+    max-height: 350px;
+}
+
+@media(max-width: 600px) {
+    section{
+        flex-direction: column;
+    }
+    article {
+        width: 100%;
+    }
+}

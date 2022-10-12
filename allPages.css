@@ -2,36 +2,42 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Times New Roman', Times, serif;
-  background-color: #FFF4e6;
+  background-color: hsl(34, 100%, 95%);
 }
 
 main {
   margin: 60px 5% 5%;
   padding-bottom: 100px;
-
 }
 
 nav {
+  margin: 0;
+  padding: 0;
   background-color: rgba(96, 27, 27, 0.942);
-  height: 60px;
+  height: 50px;
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 45px;
+  gap: 20px;
   position: fixed;
   top: 0px;
   z-index: 99;
-
+  justify-content: space-evenly;
 }
+
+/* 
+Hotel Lotus: style="padding-left: 50px
+Login: style="padding-left: 62%; text-decoration: none; font-size: large */
 
 nav a {
   color: white;
+  opacity: 90%;
   transition: 0.3s;
-
 }
 
 nav a:hover {
   color: rgb(249, 220, 182);
+  opacity: 100%;
 }
 
 
@@ -44,16 +50,13 @@ nav a:hover {
 footer {
   position: relative;
   width: 100%;
-  height: 20%;
+  height: 15%;
   padding: 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: antiquewhite;
-  height: 70px;
-  bottom: 0;
-
+  background-color: antiquewhite; 
 }
 
 footer .social {
@@ -64,8 +67,6 @@ footer .social {
   margin: 10px 0;
   padding: 0;
   width: 100%;
-
-
 }
 
 footer .social li {

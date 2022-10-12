@@ -1,9 +1,3 @@
-
-
-div {
-  height: 20px;
-}
-
 /* figure {
     float: right;
     min-width: 400px;
@@ -19,7 +13,7 @@ main {
   max-width: 600px;
   min-width: 75vh;
   min-height: 75vh;
-  margin: 0 auto;
+  margin: 40px auto;
   overflow: auto;
 }
 
@@ -71,7 +65,7 @@ section {
 }
 
 section:last-child {
-  display: inherit; /*não é hereditário*/
+  display: inherit;
   gap: 10px;
   flex-direction: row;
 }
