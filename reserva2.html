@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lótus Hotel - Reserva</title>
+<link class="favicon" rel="icon" type="image/x-icon" href="/assets/favicon.svg"/>
+<link rel="stylesheet" href="./allPages.css"/>
+<link rel="stylesheet" href="./reserva2.css"/>
+</head>
+
+    <body>
+        <nav>
+            <a class="menu" href="./index.html">Lótus Hotel</a>
+            <a class="menu" href="./suites.html">Suítes</a>
+            <a class="menu" href="./reserva.html">Reservas</a>
+            <a class="menu" href="./faleConosco.html">Fale Conosco</a>
+            <a class="menu" href="./login.html">Login </a>
+        </nav>
+
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Reserve seu Quarto</legend>
+                    <section class="data_horario">
+                        <div id="reserva_data">
+                            <label for="date">Início da reserva:</label>
+                            <input type="date" name="date" />
+                            <label for="date">Fim da reserva:</label>
+                            <input type="date" name="date" />
+                            <p>Check-in a partir das 14h.</p>
+                            <p>Check-out até às 11h.</p>
+                        </div>
+                    </section>
+                    <section id="info_quarto">
+                        <div>
+                            <label for="quantidade_pessoas">A reserva é para quantas pessoas?</label>
+                            <input type="number" name="quantidade_pessoas" id="pessoas">
+                        </div>
+                        <div>
+                            <label for="quantidade_criancas">Quantas delas são crianças?</label>
+                            <input type="number" name="quantidade_criancas" id="criancas">
+                        </div>
+                        <div>
+                            <label for="tipo">Tipo de Quarto</label>
+                            <select name="tipo-comentario" required>
+                            <option placeholder=""></option>
+                            <option value="simples">Simples</option>
+                            <option value="luxo">Luxo</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                        </div>
+                    </section>
+                    <section>
+                        <button type="submit">Reservar</button>
+                        <button type="reset">Limpar</button>
+                    </section>
+                    <section>
+                        <p>Ou ligue para agendar a sua reserva:</p>
+                        <p><img src="./assets/telephone-inbound.svg"/> (11) 3333-8080</p>
+                    </section>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <ul class="social">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./assets/instagram.svg" alt="Instagram"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./assets/facebook.svg" alt="Facebook"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/551199999999?text=Tenho%20interesse%20em%20fazer%20uma%20reserva" target="_blank">
+                        <img src="./assets/whatsapp.svg" alt="Whastapp"/>
+                    </a>
+                </li>
+            </ul>
+        <p>2022 - OiDevs team</p>
+        </footer>
+    </body>
+</html>
