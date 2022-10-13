@@ -1,77 +1,89 @@
 body {
-    background: linear-gradient(#f2bd94c0,#f0ad7a), url('./assets/bannerIndex.png'); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
+  background: linear-gradient(#f2bd94c0, #f0ad7a),
+    url('./assets/bannerIndex.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
 }
 
-.container{
-    text-align: center;
-    padding-top: 55px;
+.container {
+  text-align: center;
+  padding-top: 55px;
 }
 
-.forms{
-    border-radius: 5%;
-    margin-top: 50px;
-    position: sticky;
-    left: 28%;
-    top: 5%;
-    background-color:rgba(245, 245, 245, 0.733);
-    border: 1px solid #742821;
-    color: #742821;
-    width: 500px;
-    height: 320px;
-    align-content: center;
-    font-size:larger;
-    box-shadow: 0px 10px 40px #00000056;
+.forms {
+  border-radius: 5%;
+  margin-top: 50px;
+  position: sticky;
+  top: 5%;
+  background-color: rgba(245, 245, 245, 0.733);
+  border: 1px solid #742821;
+  color: #742821;
+  max-width: 500px;
+  height: 320px;
+  align-content: center;
+  font-size: larger;
+  box-shadow: 0px 10px 40px #00000056;
+  margin: 0 auto;
+  min-width: 280px;
 }
 
 .inside_forms {
-    position: relative;
-    top: 5%;
-    bottom: 5%;
+  position: relative;
+  top: 5%;
+  bottom: 5%;
 }
 
 input:invalid + span::after {
-    position: absolute;
-    /* content: "✖"; */
-    padding-left: 5px;
-  }
+  position: absolute;
+  /* content: "✖"; */
+  padding-left: 5px;
+}
 
 input:valid + span::after {
-    position: absolute;
-    content: "✓";
-    padding-left: 5px;
-  }
+  position: absolute;
+  content: '✓';
+  padding-left: 5px;
+}
 
 p {
-    color: rgb(92, 91, 91);
-    font-size: 12px;
+  color: rgb(92, 91, 91);
+  font-size: 12px;
 }
 
 .buttons {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-  
+
 .button {
-    position: relative;
-    align-items: center;
-    width: 30%;
-    border: 1px solid #000;
-    border-radius: 5px;
-    font-size: clamp(8px, 5vw, 1rem);
-    background-color: #f6f6e9;
-    color: #742821;
-    height: 40px;
+  position: relative;
+  align-items: center;
+  width: 30%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  background-color: #f6f6e9;
+  color: #742821;
+  height: 40px;
+  transition: 0.3s ease-in;
 }
 
 button:hover {
-    cursor: pointer;
-    background-color: #f2bd94ce;
-    font-weight: bold;
+  cursor: pointer;
+  background-color: #f2bd94ce;
+  font-weight: bold;
 }
 
 .button:active {
-    font-size:  1.1rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  position: static;
+}
+
+.footerp {
+  font-size: 1rem;
+  color: #000;
 }
