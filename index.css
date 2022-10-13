@@ -5,3 +5,8 @@
 /* @media (max-width: 600px) {
 
 } */
+
+.card-img-top:hover{
+  background-color: aqua;
+  
+}
