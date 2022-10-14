@@ -91,3 +91,11 @@ footer .social a {
 footer .social a:hover {
   transform: translateY(-5px);
 }
+
+h4 {
+  color: rgba(96, 27, 27, 0.942);
+}
+
+legend {
+  color: rgba(96, 27, 27, 0.942);
+}
