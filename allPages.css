@@ -33,9 +33,6 @@ nav {
   justify-content: space-evenly;
 }
 
-/* 
-Hotel Lotus: style="padding-left: 50px
-Login: style="padding-left: 62%; text-decoration: none; font-size: large */
 
 nav a {
   color: white;
@@ -44,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(249, 220, 182);
+  color: rgb(215, 140, 43);
   opacity: 100%;
 }
 
