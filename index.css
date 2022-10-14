@@ -6,7 +6,11 @@
 
 } */
 
-.card-img-top:hover{
-  background-color: aqua;
-  
+.card{
+  width: 20rem;
 }
+
+.card-body{
+  text-align: center;
+}
+
