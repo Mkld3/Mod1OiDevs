@@ -12,6 +12,11 @@ main {
 h1 {
   margin: 0;
   padding: 0;
+  color: rgba(96, 27, 27, 0.942);
+}
+
+h3 {
+  color: rgba(96, 27, 27, 0.942);
 }
 
 section {
